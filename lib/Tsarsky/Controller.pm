@@ -24,7 +24,7 @@ sub redis {
 
 sub ip {
 	my $self = shift;
-	return (($self->tx->req->headers->{headers}->{'x-forwarded-for'}||[[]])->[0]->[0]) || $self->tx->remote_address;
+	return $self->tx->remote_address;
 }
 
 
