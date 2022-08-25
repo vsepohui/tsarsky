@@ -33,7 +33,7 @@ sub popast {
 		my $poyasneniya = $self->param('poyasneniya') or return $self->oshybka("ПРИЯТНЫЙ НЕ ПОЯСНИЛ ЗА СЕБЯ");
 		return $self->oshybka('СЛИШКОМ МАЛО ПОЯСНИЛ') if length $poyasneniya <= 50;
 		#die  $self->session('popast_kogda') ;
-		return $self->oshybka('ЦАРСКИ СТРАЖА НЕ ПУСКАЕТ СКОРОХОДА') if ($self->session('popast_kogda') || time ()) + 60  > time();
+		return $self->oshybka('ЦАРСКИ СТРАЖА НЕ ПУСКАТЬ СКОРОХОДА') if ($self->session('popast_kogda') || time ()) + 60  > time();
 		
 
 		Tsarsky::Samopisets->pishy(
