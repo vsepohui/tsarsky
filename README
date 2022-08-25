@@ -1,1 +1,15 @@
 Tsarsky.site
+
+
+
+How to install on Ubuntu / Debian:
+----------------------------------------
+
+apt install cpanminus
+apt install make build-essential
+
+cpanm Mojolicious  # Futurama
+cpanm AnyEvent     # Аня; для Футурамы
+cpanm EV           # Ива; для Ани
+
+----------------------------------------
