@@ -29,4 +29,10 @@ sub komanda {
 }
 
 
+sub bibingo {
+	my $self = shift;
+	return $self->render;
+}
+
+
 1;

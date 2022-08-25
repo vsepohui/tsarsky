@@ -29,6 +29,7 @@ sub startup {
 	$r->get('/samopisets')->to('samopisets#samopisets');
 	$r->get('/gramota')->to('static#gramota');
 	$r->get('/komanda')->to('static#komanda');
+	$r->get('/bibingo')->to('static#bibingo');
 	
 	$self->helper(
 		'json' => sub {
