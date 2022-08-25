@@ -1,0 +1,101 @@
+% layout 'default';
+% title 'ПОПАСТЬ';
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1>ЦАРСКИ ПОПАСТЬ</h1>
+        
+        
+  <div class="mb-3 row">
+    <label for="imya" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ ИМЯ</label>
+    <div class="col-sm-8">
+      <input type="text" name="imya" id="imya" class="form-control" value="" placeholder="ПАША ТЕХНИК">
+    </div>
+  </div>
+
+
+  <div class="mb-3 row">
+    <label for="latin" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ ЛАТЫНЬ</label>
+    <div class="col-sm-8">
+      <input type="text" id="latin" name="latin" class="form-control" value="" placeholder="pasha_technique">
+    </div>
+  </div>
+
+  
+
+  <div class="mb-3 row">
+    <label for="pochta" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ ПОЧТА</label>
+    <div class="col-sm-8">
+      <input type="email" id="pochta" name="pochta" class="form-control" value="" placeholder="poluginy@pochta.ru">
+    </div>
+  </div>
+  
+
+
+  
+
+<div class="mb-3 row">
+    <label for="pol" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ ПОЛ</label>
+    <div class="col-sm-8">
+  <select name="pol" id="pol" class="form-select" aria-label="">
+  <option selected>МУЖЧИНА</option>
+  <option value="1">ЖЕНЩИНА</option>
+</select>
+
+    </div>
+  </div>
+  
+
+
+
+<div class="mb-3 row">
+    <label for="priyatny" class="col-sm-4 col-form-label">ПРИЯТНЫЙ?</label>
+    <div class="col-sm-8">
+  <select name="priyatny" id="priyatny" class="form-select" aria-label="">
+  <option selected>ПРАВДА</option>
+  <option value="1">НЕ СОВСЕМ</option>
+  <option value="2">БЫВАЕТ</option>
+  <option value="3">БЕСПРЕДЕЛ</option>
+</select>
+
+    </div>
+  </div>
+  
+
+<div class="mb-3 row">
+    <label for="razmer" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ РАЗМЕР</label>
+    <div class="col-sm-8">
+	    <input type="text" id="razmer" name="razmer" class="form-control" value="" placeholder="">
+    </div>
+  </div>
+  
+  
+  <div class="mb-3 row">
+    <label for="secret" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ СЕКРЕТ</label>
+    <div class="col-sm-8">
+      <input type="password" class="form-control" id="secret" name="secret" placeholder="УКАЖИ">
+    </div>
+  </div>
+  
+  
+    <div class="mb-3 row">
+    <label for="poyasneniya" class="col-sm-4 col-form-label">ПОЯСНИ ЗА СЕБЯ</label>
+    <div class="col-sm-8">
+      <textarea class="form-control" id="poyasneniya" name="poyasneniya" placeholder=""></textarea>
+    </div>
+  </div>
+  
+
+    <div class="mb-3 row">
+    <label for="poyasneniya" class="col-sm-4 col-form-label"></label>
+    <div class="col-sm-8" align="left">
+      <a class="h2 btn btn-danger btn-lg" href="/popast">ПРИЯТНЫЙ КНОПКА</a>
+    </div>
+  </div>
+    
+  
+  
+      </div>
+    </div>
+  </section>

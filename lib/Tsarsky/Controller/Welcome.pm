@@ -1,4 +1,4 @@
-package Tsarsky::Controller::Example;
+package Tsarsky::Controller::Welcome;
 use Mojo::Base 'Mojolicious::Controller', -signatures;
 
 # This action will render a template
