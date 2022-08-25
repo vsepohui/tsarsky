@@ -81,14 +81,14 @@
     </div>
   -->
   
-       <div class="text-end row">
-		   <div class="col-md-6">
+       <div class="text-end row" style="max-width: 270px;">
+		   <div class="col-md-8">
 			   <form method="GET" action="/bibingo">
 					<input type="text" class="form-control form-control-lg" style="font-family: 'San Francisco', Helvetica, Arial, san-serif;" placeholder="🐕 ИЩЕЙКА" name="zapah">
 				</form>
 		   </div>
-		   <div class="col-md-6">
-			<a href="/voyti" class="btn btn-light btn-lg">ВОЙТИ</a>
+		   <div class="col-md-2">
+			<a href="/vorota" class="btn btn-light btn-lg"><img src="/i/k.svg"/ width="27px"></a>
 			</div>
         </div>
     </div>  
