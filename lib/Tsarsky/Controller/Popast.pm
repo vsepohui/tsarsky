@@ -73,7 +73,7 @@ sub popast {
 			},
 		);
 		
-		$self->redirect_to('/popdast/popadesh');		
+		$self->redirect_to('/popast/popadesh');		
 	} else {
 		$self->session('popast_kogda' => time());
 	}
