@@ -82,7 +82,7 @@
   
   
     <div class="mb-3 row">
-    <label for="poyasneniya" class="col-sm-4 col-form-label">ПОЯСНИ ЗА СЕБЯ</label>
+    <label for="poyasneniya" class="col-sm-4 col-form-label">УЯСНИ ЗА СЕБЯ ЦАРСКИ</label>
     <div class="col-sm-8">
       <textarea class="form-control" id="poyasneniya" name="poyasneniya" placeholder="" required="required"><%= param 'poyasneniya' %></textarea>
     </div>
