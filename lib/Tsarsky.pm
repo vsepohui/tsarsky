@@ -19,6 +19,7 @@ sub startup {
 	$self->sessions->cookie_name('pechy');
 	$self->sessions->cookie_domain($config->{domain});
 	$self->sessions->secure($config->{proto} eq 'https');
+	$self->sessions->default_expiration(60*60*24*7);
 
 	my $r = $self->routes;
 
