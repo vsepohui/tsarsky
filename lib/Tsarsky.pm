@@ -17,6 +17,7 @@ sub startup {
 
 	$self->secrets($config->{secrets});
 	$self->sessions->cookie_name('pechy');
+	$sessions->cookie_domain($config->{domain});
 
 	my $r = $self->routes;
 
