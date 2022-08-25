@@ -1,0 +1,19 @@
+% layout 'default';
+% title 'СТРАНИЦА НЕТ';
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+      
+<h1 align="center">СТРАНИЦА НЕТ</h1>
+
+<h3>ПОЛЕЗНЫЙ БРАТСКИ ЛЮБИМЫЙ ТЫ ОШИБCЯ ТУТ НЕТ ТО ЧТО ТЫ ИСКАЛ ПРОБУЮ ДРУГОЙ</h3>
+<h3>ПОЛЕЗНЫЙ ВОРОТА НА ДРУГОМ МЕСТЕ</h3>
+
+
+<h1>[*]</h1>
+	</div>
+</div>
+</section>
+
+
