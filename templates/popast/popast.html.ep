@@ -7,18 +7,20 @@
         <h1>ЦАРСКИ ПОПАСТЬ</h1>
         
         
+<form action="/popast" method="POST">
+        
   <div class="mb-3 row">
     <label for="imya" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ ИМЯ</label>
     <div class="col-sm-8">
-      <input type="text" name="imya" id="imya" class="form-control" value="" placeholder="ПАША ТЕХНИК">
+      <input type="text" name="imya" id="imya" class="form-control" value="<%= param 'imya' %>" placeholder="ПАША ТЕХНИК" required="required">
     </div>
   </div>
 
 
   <div class="mb-3 row">
-    <label for="latin" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ ЛАТЫНЬ</label>
+    <label for="latyn" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ ЛАТЫНЬ</label>
     <div class="col-sm-8">
-      <input type="text" id="latin" name="latin" class="form-control" value="" placeholder="pasha_technique">
+      <input type="text" id="latyn" name="latyn" class="form-control" value="<%= param 'latyn' %>" placeholder="pasha_technique" required="required">
     </div>
   </div>
 
@@ -27,7 +29,7 @@
   <div class="mb-3 row">
     <label for="pochta" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ ПОЧТА</label>
     <div class="col-sm-8">
-      <input type="email" id="pochta" name="pochta" class="form-control" value="" placeholder="poluginy@pochta.ru">
+      <input type="email" id="pochta" name="pochta" class="form-control" value="<%= param 'pochta' %>" placeholder="golubiny@pochta.ru" required="required">
     </div>
   </div>
   
@@ -66,7 +68,7 @@
 <div class="mb-3 row">
     <label for="razmer" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ РАЗМЕР</label>
     <div class="col-sm-8">
-	    <input type="text" id="razmer" name="razmer" class="form-control" value="" placeholder="">
+	    <input type="text" id="razmer" name="razmer" class="form-control" value="<%= param 'razmer' %>" placeholder="" required="required">
     </div>
   </div>
   
@@ -74,7 +76,7 @@
   <div class="mb-3 row">
     <label for="secret" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ СЕКРЕТ</label>
     <div class="col-sm-8">
-      <input type="password" class="form-control" id="secret" name="secret" placeholder="УКАЖИ">
+      <input type="password" class="form-control" id="secret" name="secret" placeholder="УКАЖИ" value="<%= param 'secret' %>" required="required">
     </div>
   </div>
   
@@ -82,7 +84,7 @@
     <div class="mb-3 row">
     <label for="poyasneniya" class="col-sm-4 col-form-label">ПОЯСНИ ЗА СЕБЯ</label>
     <div class="col-sm-8">
-      <textarea class="form-control" id="poyasneniya" name="poyasneniya" placeholder=""></textarea>
+      <textarea class="form-control" id="poyasneniya" name="poyasneniya" placeholder="" required="required"><%= param 'poyasneniya' %></textarea>
     </div>
   </div>
   
@@ -90,11 +92,11 @@
     <div class="mb-3 row">
     <label for="poyasneniya" class="col-sm-4 col-form-label"></label>
     <div class="col-sm-8" align="left">
-      <a class="h2 btn btn-danger btn-lg" href="/popast">ПРИЯТНЫЙ КНОПКА</a>
+      <button type="submit" class="h2 btn btn-danger btn-lg">ПРИЯТНЫЙ КНОПКА</a>
     </div>
   </div>
     
-  
+ </form>
   
       </div>
     </div>

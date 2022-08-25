@@ -5,22 +5,30 @@ use warnings;
  
 use Mojo::Base 'Mojolicious';
 
-# This method will run once at server start
+use Tsarsky::Magiya;
+use utf8;
+
+
 sub startup {
 	my $self = shift;
 
-	# Load configuration from config file
-	my $config = $self->plugin('NotYAMLConfig');
+	my $config = $self->plugin('Config');
+	#die $config;
 
-	# Configure the application
 	$self->secrets($config->{secrets});
 
-	# Router
 	my $r = $self->routes;
 
-	# Normal route to controller
 	$r->get('/')->to('welcome#welcome');
-	$r->get('/popast')->to('popast#popast');
+	$r->any('/popast')->to('popast#popast');
+	$r->get('/samopisets')->to('samopisets#samopisets');
+	
+	$self->helper(
+		'json' => sub {
+			my $self = shift;
+			return Tsarsky::Magiya->zavernut(shift);
+		},
+	);
 }
 
 1;

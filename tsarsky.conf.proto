@@ -1,0 +1,10 @@
+{
+	secrets					=> ['SHOESED-SECRET-FOR-GOA-JUNKS'],
+	session_remember		=> 7 * 86400,
+	domain					=> 'tsarsky.site',
+	proto					=> 'https',
+	redis					=> {
+			server => '127.0.0.1:6379',
+	},
+	
+};

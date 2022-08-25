@@ -1,0 +1,41 @@
+% layout 'default';
+% title 'САМОПИСЕЦ';
+
+  <section class="py-5 text-center container">
+    <div class="row">
+      <div class="col-lg-10 col-md-10 mx-auto">
+        <h1>ЦАРСКИ САМОПИСЕЦ</h1>
+        
+
+
+  <table class="table">
+     <tr>
+       <td>ИП</td>
+       <td>ВРЕМЯ</td>
+       <td>ПРИЯТНЫЙ</td>
+       <td>ТИП</td>
+       <td>ДЕЛО</td>
+     </tr>
+     
+
+% for my $k (@$karma) {
+   % next unless ref $k eq 'HASH'; 
+<tr>
+	<td><%= $k->{'ИП'} %></td>
+	<td><%= scalar localtime $k->{'ВРЕМЯ'} %></td>
+	<td><%= $k->{priyatny} || 'АНОНИМ' %></td>
+	<td><%= $k->{'ТИП'} %></td>
+	<td>
+		% for my $d (sort keys %{$k->{'ДЕЛО'}}) {
+			<%= $d %>: <%= $k->{'ДЕЛО'}->{$d} %><br/>
+		% }
+	</td>
+	%# <td><%= json $k->{'ДЕЛО'} %></td>
+</tr>
+% }     
+     
+  </table>  
+  
+      </div>
+    </div>
+  </section>

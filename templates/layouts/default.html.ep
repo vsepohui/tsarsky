@@ -9,13 +9,42 @@
     
 
 <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/noty.js"></script>
+
 
 <link rel="apple-touch-icon" href="/i/logo.png" sizes="180x180">
 <link rel="icon" href="/i/logo.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/i/logo.png" sizes="16x16" type="image/png">
 <link rel="icon" href="/i/logo.png">
 
+% my $noty = stash ('noty') || flash ('noty');
+% flash noty => undef;
+% my $Sudo = stash 'Sudo';
+% my $User = stash 'User';
+% use Encode;
+% if ($noty || $Sudo) {
+
+	<script>
+	$(function(){
+		% if ($noty) {
+			% Encode::decode_utf8($noty);
+			% #$noty = Tsarsky::Magiya->razvernut($noty);
+			
+			% for (@$noty) {
+				% my $type = $_->[0];
+				% my $text = $_->[1];
+				% my %t = ('ОШИБКА' => 'error');
+				noty(<%== json { type => $t{$type} , text => $text, timeout => 2000, } %> );
+			% }
+		% }
+		% if ($Sudo) {
+			noty(<%== json { type => 'info' , text => 'Вы прикинулись сотрудником ' . $User->fio_short . '. <a href="/users/sudo_finish">Закончить сессию.</a>' } %> );
+		% }
+		});
+	</script>
+% }
     
   </head>
   <body style="background: #0A0A0A">
@@ -76,6 +105,7 @@
     <div class="col-6 col-md">
       <ul class="list-unstyled text-small">
         <li><a class="link-secondary" href="https://tsarsky.site/">ЦАРСКИ САЙТ</a></li>
+        <li><a class="link-secondary" href="/samopisets">САМОПИСЕЦ</a></li>
         <li><a class="link-secondary" href="https://github.com/trunaev/tsarsky">КОД</a></li>
       </ul>
     </div>
