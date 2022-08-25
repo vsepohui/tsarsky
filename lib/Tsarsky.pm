@@ -21,6 +21,7 @@ sub startup {
 
 	$r->get('/')->to('welcome#welcome');
 	$r->any('/popast')->to('popast#popast');
+	$r->get('/popast/popadesh')->to('popast#popadesh');
 	$r->get('/samopisets')->to('samopisets#samopisets');
 	
 	$self->helper(

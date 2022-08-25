@@ -36,7 +36,7 @@
 				% my $type = $_->[0];
 				% my $text = $_->[1];
 				% my %t = ('ОШИБКА' => 'error');
-				noty(<%== json { type => $t{$type} , text => $text, timeout => 2000, } %> );
+				noty(<%== json { type => $t{$type} , text => $text, timeout => 5000, } %> );
 			% }
 		% }
 		% if ($Sudo) {

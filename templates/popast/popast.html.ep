@@ -41,8 +41,8 @@
     <label for="pol" class="col-sm-4 col-form-label">ПОЛЕЗНЫЙ ПОЛ</label>
     <div class="col-sm-8">
   <select name="pol" id="pol" class="form-select" aria-label="">
-  <option selected>МУЖЧИНА</option>
-  <option value="1">ЖЕНЩИНА</option>
+  <option value="М" selected>МУЖЧИНА</option>
+  <option value="Ж">ЖЕНЩИНА</option>
 </select>
 
     </div>

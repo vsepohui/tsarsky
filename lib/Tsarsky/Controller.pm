@@ -5,13 +5,26 @@ use warnings;
 
 use base 'Mojolicious::Controller';
 
+use Tsarsky::Redis;
 use Tsarsky::Magiya;
 use Encode;
 use utf8;
 
+
+sub magiya {
+	my $self = shift;
+	my $magiya = Tsarsky::Magiya->new;
+	return $magiya;
+}
+
+sub redis {
+	my $self = shift;
+	return Tsarsky::Redis->redis;
+}
+
 sub ip {
 	my $self = shift;
-	return $self->tx->remote_address;
+	return (($self->tx->req->headers->{headers}->{'x-forwarded-for'}||[[]])->[0]->[0]) || $self->tx->remote_address;
 }
 
 

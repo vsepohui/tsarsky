@@ -1,0 +1,16 @@
+% layout 'default';
+% title 'ПОПАДЕШЬ';
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1>ЦАРСКИ ПОПАДЕШЬ</h1>
+        <h2>ВСЕ ГОТОВИТЬСЯ</h2>
+        <h3>ТЕБЕ ПРИЛЕТИТ НА ПОЧТУ ЖДИ!</h3>
+        <h3>ЕСЛИ ХОЧЕШЬ ПОПАСТЬ ЗА ДЕНЬГИ БЫСТРЕЕ</h3>
+        
+        <a href="/popast/podesh/za-dengi" class="h2 btn btn-danger btn-lg">ПРИЯТНЫЙ ПРОБУЙ</a>
+        
+      </div>
+    </div>
+  </section>

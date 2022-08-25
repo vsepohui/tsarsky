@@ -9,10 +9,10 @@ apt install cpanminus
 apt install make build-essential
 apt install redis
 
-cpanm Mojolicious   # Futurama
-cpanm AnyEvent      # Аня; для Футурамы
-cpanm EV            # Ива; для Ани
-cpanm --force Redis # С силой
+cpanm Mojolicious   				# Futurama
+cpanm AnyEvent      				# Аня; для Футурамы
+cpanm EV            				# Ива; для Ани
+cpanm --force Redis 				# С силой
 cpanm JSON::XS
-
+cpanm Data::Validate::Email 		# ДИ МАМА ИСТ ГЕГАРГЕН... 
 ----------------------------------------

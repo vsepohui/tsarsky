@@ -3,9 +3,22 @@ package Tsarsky::Magiya;
 use 5.022;
 use warnings;
 
+use Data::Validate::Email qw(is_email);
 use JSON::XS;
 use utf8;
 
+
+sub new {
+	my $class = shift;
+	state $magiya = bless {}, $class;
+	return $magiya;
+}
+
+sub proverka_pochty {
+	my $class = shift;
+	my $pochta = shift;
+	return is_email ($pochta);
+}
 
 sub json {
 	my $class = shift;
