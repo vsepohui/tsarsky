@@ -10,8 +10,12 @@
 <h3>ПОЛЕЗНЫЙ БРАТСКИ ЛЮБИМЫЙ ТЫ ОШИБCЯ ТУТ НЕТ ТО ЧТО ТЫ ИСКАЛ ПРОБУЮ ДРУГОЙ</h3>
 <h3>ПОЛЕЗНЫЙ ВОРОТА НА ДРУГОМ МЕСТЕ</h3>
 
-
 <h1>[*]</h1>
+
+			   <form method="GET" action="/bibingo">
+					<input type="text" class="form-control form-control-lg" style="font-family: 'San Francisco', Helvetica, Arial, san-serif;" placeholder="🐕 ИЩЕЙКА" name="zapah">
+				</form>
+
 	</div>
 </div>
 </section>
