@@ -34,7 +34,10 @@
                     <a class="text-white fs-5 text-decoration-none" style="" href="/"><strong>БОГОВОР</strong></a>
      </div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <!--
   <input type="text" class="form-control" style="width: 160px; height: 33px;" placeholder="ИЩЕЙКА">
+  -->
        <div class="dropdown text-end">
 
           <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
