@@ -47,7 +47,7 @@
 % }
     
   </head>
-  <body style="background: #0A0A0A">
+  <body style="background: #0A0A0A;">
 <div class="container py-3">
   <header>
     <div class="d-flex flex-md-row pb-3 mb-4 justify-content-between text-white" style="max-height: 33px;">
@@ -58,20 +58,14 @@
             <span class="fs-4 text-white"><strong>ЦАРСКИ</strong></span>
         </a>
 
-<!--
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a class="text-white fs-5 text-decoration-none" href="/"><strong>ТЫ</strong></a>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a class="text-white fs-5 text-decoration-none" style="" href="/"><strong>БОГОВОР</strong></a>
-    
--->
      </div>
     
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         
-        <!--
-  <input type="text" class="form-control" style="width: 160px; height: 33px;" placeholder="ИЩЕЙКА">
-  -->
+
+  
+  
+  <!--
        <div class="dropdown text-end">
 
           <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -85,6 +79,20 @@
           </ul>
         </div>
     </div>
+  -->
+  
+       <div class="text-end row">
+		   <div class="col-md-6">
+			   <form method="GET" action="/bibingo">
+					<input type="text" class="form-control form-control-lg" style="font-family: 'San Francisco', Helvetica, Arial, san-serif;" placeholder="🐕 ИЩЕЙКА" name="zapah">
+				</form>
+		   </div>
+		   <div class="col-md-6">
+			<a href="/voyti" class="btn btn-light btn-lg">ВОЙТИ</a>
+			</div>
+        </div>
+    </div>  
+  
   </header>
   
 <div style="background: white;">
@@ -111,9 +119,9 @@
     </div>
     <div class="col-6 col-md">
       <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="/">КОМАНДА</a></li>
-        <li><a class="link-secondary" href="/">ГРАМОТА</a></li>
-        <li><a class="link-secondary" href="/">БОГОВОР ИВАН ТРУНАЕВ</a></li>
+		<li><a class="link-secondary" href="/bogovor">БОГОВОР ИВАН ТРУНАЕВ</a></li>
+		<li><a class="link-secondary" href="/gramota">ГРАМОТА</a></li>
+        <li><a class="link-secondary" href="/komanda">КОМАНДА</a></li> <!-- ВНИЗУ -->
     </div>
   </div>
 </footer>
