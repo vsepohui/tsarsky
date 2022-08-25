@@ -27,6 +27,8 @@ sub startup {
 	$r->any('/popast')->to('popast#popast');
 	$r->get('/popast/popadesh')->to('popast#popadesh');
 	$r->get('/samopisets')->to('samopisets#samopisets');
+	$r->get('/gramota')->to('static#gramota');
+	$r->get('/komanda')->to('static#komanda');
 	
 	$self->helper(
 		'json' => sub {

@@ -5,6 +5,7 @@ use warnings;
 
 use Data::Validate::Email qw(is_email);
 use JSON::XS;
+use Mojo::Home;
 use utf8;
 
 
@@ -12,6 +13,18 @@ sub new {
 	my $class = shift;
 	state $magiya = bless {}, $class;
 	return $magiya;
+}
+
+sub dir {
+	my $self = shift;
+	
+	state $dir;
+	unless ($dir) {
+		my $home = Mojo::Home->new;
+		$home->detect;
+		$dir = "$home";
+	}
+	return $dir;
 }
 
 sub proverka_pochty {

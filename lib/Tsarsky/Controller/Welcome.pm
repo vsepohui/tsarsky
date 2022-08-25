@@ -1,11 +1,14 @@
 package Tsarsky::Controller::Welcome;
-use Mojo::Base 'Mojolicious::Controller', -signatures;
 
-# This action will render a template
-sub welcome ($self) {
+use 5.022;
+use warnings;
 
-  # Render template "example/welcome.html.ep" with message
-  $self->render(msg => 'Welcome to the Mojolicious real-time web framework!');
+use base 'Tsarsky::Controller';
+
+
+sub welcome  {
+	my $self = shift;
+	$self->render();
 }
 
 1;

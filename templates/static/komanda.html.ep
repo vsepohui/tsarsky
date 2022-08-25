@@ -1,0 +1,12 @@
+% layout 'default';
+% title 'КОМАНДА РАЗРАБОТЧИК';
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1>ДОЛЛАР ЦАРСКИ КОМАНДА РАЗРАБОТЧИК</h1>
+        <h3>ДОЛЛАР БОРОГОВОР ИВАН ТРУНАЕВ</h3>
+        <a href="/bogovor"><img src="/i/bega.jpg"/></a>
+      </div>
+    </div>
+  </section>
