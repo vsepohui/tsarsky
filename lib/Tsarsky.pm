@@ -18,6 +18,7 @@ sub startup {
 	$self->secrets($config->{secrets});
 	$self->sessions->cookie_name('pechy');
 	$self->sessions->cookie_domain($config->{domain});
+	$self->sessions->secure($config->{proto} eq 'https');
 
 	my $r = $self->routes;
 
