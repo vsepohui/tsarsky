@@ -35,4 +35,9 @@ sub bibingo {
 }
 
 
+sub bogovor {
+	my $self = shift;
+	return $self->render;
+}
+
 1;

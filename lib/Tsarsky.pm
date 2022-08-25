@@ -30,6 +30,7 @@ sub startup {
 	$r->get('/gramota')->to('static#gramota');
 	$r->get('/komanda')->to('static#komanda');
 	$r->get('/bibingo')->to('static#bibingo');
+	$r->get('/bogovor')->to('static#bogovor');
 	
 	$self->helper(
 		'json' => sub {
