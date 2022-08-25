@@ -19,10 +19,8 @@ sub oshybka {
 
 # This action will render a template
 sub popast {
-	my $self = shift;
-	
-	
-	
+	my $self = shift;	
+
 	if ($self->req->method eq 'POST') {
 		my $imya = $self->param('imya') or return $self->oshybka("ПРИЯТНЫЙ ИМЯ НЕ УКАЗАН");
 		return $self->oshybka("ПРИЯТНЫЙ ИМЯ СЛИШКОМ МАЛ") if length $imya < 6;
@@ -74,6 +72,8 @@ sub popast {
 				'ПОЯСНЕНИЯ'	=> $poyasneniya,
 			},
 		);
+		
+		$self->redirect_to('/popdast/popadesh');		
 	} else {
 		$self->session('popast_kogda' => time());
 	}
