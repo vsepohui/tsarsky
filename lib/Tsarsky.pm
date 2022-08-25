@@ -16,6 +16,7 @@ sub startup {
 	#die $config;
 
 	$self->secrets($config->{secrets});
+	$self->sessions->cookie_name('pechy');
 
 	my $r = $self->routes;
 
