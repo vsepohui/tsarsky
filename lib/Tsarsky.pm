@@ -31,6 +31,9 @@ sub startup {
 	$r->get('/komanda')->to('static#komanda');
 	$r->get('/bibingo')->to('static#bibingo');
 	$r->get('/bogovor')->to('static#bogovor');
+
+	# MAGIK BOOK "SERVER TSARTSKY.SITE"
+	$r->get('/book')->to('book#book');
 	
 	$self->helper(
 		'json' => sub {
